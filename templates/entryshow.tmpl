@@ -1,0 +1,31 @@
+<a href="#" data-toggle="modal" data-target="#show-{{i}}" class="tile-link">
+<div class="entry-container">
+<img src="{{thumbnail.url}}" alt="{{entry.title}}">
+<div class="show-meta">
+<h5>{{entry.title}}</h5>
+{{entry.contentSnippet}}
+<div>
+</div>
+</a>
+
+
+<div id="show-{{i}}" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+    <h5>{{entry.title}}</h5>  
+    Published: {{entry.publishedDate}} <br>
+    Categories: <span class="label label-inverse">{{category}}</span>  
+  </div>
+  <div class="modal-body">
+    <video id="video-{{i}}" class="video-js vjs-default-skin"
+      controls preload="auto" width="{{thumbnail.width}}" height="{{thumbnail.height}}"
+      poster="{{thumbnail.url}}"
+      data-setup='{}'>
+     <source src="{{videoContent.url}}" type='video/mp4' />
+    </video>
+  </div>
+  <div class="modal-footer">
+     {{{entry.content}}}<br>
+      <a href="{{entry.link}}" class="modal-footer-a"> Original Link </a>
+   </div>
+</div>
