@@ -63,8 +63,8 @@ a:hover {
 }
 
 .nav-title {
-  position: relative;
-  text-align: center;
+  position: fixed;
+  left: 20px;
   color: #ffffff;
 }
 
@@ -80,4 +80,10 @@ a:hover {
 
 .show-meta {
   text-align: left;
+}
+
+.page-info{
+  text-align: center;
+  white-space: nowrap;
+  padding-bottom: 20px;
 }
