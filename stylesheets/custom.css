@@ -62,16 +62,6 @@ a:hover {
   padding-bottom: 10px;
 }
 
-.nav-previous {
-  position: fixed;
-  left: 5px;
-}
-
-.nav-next {
-  position: fixed;
-  right: 5px;
-}
-
 .nav-title {
   position: relative;
   text-align: center;
